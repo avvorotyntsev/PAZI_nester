@@ -1,0 +1,73 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/evp.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_ae5ad5cbeccaedc03a48d3c7eaa803e79}{print\+\_\+usage}} ()
+\begin{DoxyCompactList}\small\item\em Prints usage information for the file encryption tool. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main function for file encryption/decryption. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Main function for file encryption/decryption. 
+
+This function takes command line arguments to perform encryption or decryption of a specified file using a password-\/derived key. It uses the Open\+SSL library for the cryptographic operations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command line arguments. \\
+\hline
+{\em argv} & The array of command line arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 if successful, otherwise returns an error code. 
+\end{DoxyReturn}
+Generates a key from the password using PBKDF2.
+
+Uses PKCS5\+\_\+\+PBKDF2\+\_\+\+HMAC to generate a 256-\/bit key from the user-\/provided password.
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & User-\/provided password. \\
+\hline
+{\em key} & Generated key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true if key generation is successful, false otherwise.
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae5ad5cbeccaedc03a48d3c7eaa803e79}\label{main_8cpp_ae5ad5cbeccaedc03a48d3c7eaa803e79}} 
+\index{main.cpp@{main.cpp}!print\_usage@{print\_usage}}
+\index{print\_usage@{print\_usage}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_usage()}{print\_usage()}}
+{\footnotesize\ttfamily void print\+\_\+usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints usage information for the file encryption tool. 
+
+This function outputs the usage details for encrypting or decrypting files. It explains the command line options required to use the tool. 

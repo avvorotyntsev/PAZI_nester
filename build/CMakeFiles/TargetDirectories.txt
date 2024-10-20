@@ -1,0 +1,3 @@
+/home/vboxuser/nester/build/CMakeFiles/file_encrypt.dir
+/home/vboxuser/nester/build/CMakeFiles/edit_cache.dir
+/home/vboxuser/nester/build/CMakeFiles/rebuild_cache.dir

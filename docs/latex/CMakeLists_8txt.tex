@@ -1,0 +1,16 @@
+\hypertarget{CMakeLists_8txt}{}\doxysection{CMake\+Lists.\+txt File Reference}
+\label{CMakeLists_8txt}\index{CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{CMakeLists_8txt_a8630c6920fb43fded3a6dca23704ddce}{cmake\+\_\+minimum\+\_\+required}} (VERSION 3.\+10) project(File\+Encryption\+Tool) set(CMAKE\+\_\+\+CXX\+\_\+\+STANDARD 11) option(USE\+\_\+\+OPENSSL \char`\"{}Use Open\+SSL for encryption\char`\"{} ON) option(USE\+\_\+\+LIBAKRYPT \char`\"{}Use Libakrypt for encryption\char`\"{} OFF) add\+\_\+executable(file\+\_\+encrypt main.\+cpp) if(USE\+\_\+\+OPENSSL) find\+\_\+package(Open\+SSL REQUIRED) if(WIN32) set(OPENSSL\+\_\+\+USE\+\_\+\+STATIC\+\_\+\+LIBS TRUE) include\+\_\+directories(\$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{CMakeLists_8txt_a8630c6920fb43fded3a6dca23704ddce}\label{CMakeLists_8txt_a8630c6920fb43fded3a6dca23704ddce}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!cmake\_minimum\_required@{cmake\_minimum\_required}}
+\index{cmake\_minimum\_required@{cmake\_minimum\_required}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{cmake\_minimum\_required()}{cmake\_minimum\_required()}}
+{\footnotesize\ttfamily cmake\+\_\+minimum\+\_\+required (\begin{DoxyParamCaption}\item[{VERSION 3.}]{10 }\end{DoxyParamCaption})}
+
